@@ -1,11 +1,15 @@
 /*
 This is how you comment in css
 */
-/* Adding a single font to the whole page */
+/*
+Adding a single font to the whole page
+*/
 * {
     font-family: "Playfair Display";
 }
-/* Center top images and wrap */
+/*
+Center top images and wrap
+*/
 .Images {
     display: flex;
     justify-content: center; /* centers horizontally */
@@ -14,22 +18,30 @@ This is how you comment in css
     border: .5em;
     padding: .27em;
 }
-/* Applying text changes to all h1 tag */
+/*
+Applying text changes to all h1 tag
+*/
 h1 {
     color:purple;
     text-align:center;
 }
-/* Applying text changes to all h2 tags */
+/*
+Applying text changes to all h2 tags
+*/
 h2 {
     text-align:center;
 }
-/* Applying text changes to 'Actual-Lyric' class */
+/*
+Applying text changes to 'Actual-Lyric' class
+*/
 .Actual-Lyrics{
     text-align:center;
     color: purple;
     text-shadow: Purple;
 }
-/* Applying text changes to all h3 tags */
+/*
+Applying text changes to all h3 tags
+*/
 h3 {
     color:black;
     text-align: center;
