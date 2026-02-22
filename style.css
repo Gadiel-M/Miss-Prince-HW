@@ -8,15 +8,28 @@ Adding a single font to the whole page
     font-family: "Playfair Display";
 }
 /*
-Center top images and wrap
+Center top images and make them look nice with borders and spacing
 */
 .Images {
     display: flex;
-    justify-content: center; /* centers horizontally */
-    flex-wrap: wrap; /* allows wrapping on smaller screens */
+    gap: 0;
     margin: 2em;
-    border: .5em;
-    padding: .27em;
+    margin-top: 2em;
+    padding: 3em;
+    justify-content: center;
+}
+.img-wrapper {
+    width: 20%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border: 0.5em solid #9a4fa1;
+    box-sizing: border-box;
+}
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 /*
 Applying text changes to all h1 tag
@@ -45,4 +58,9 @@ Applying text changes to all h3 tags
 h3 {
     color:black;
     text-align: center;
+}
+.youtube-video {
+    display: flex;
+    justify-content: center;
+    margin: 5em;
 }
