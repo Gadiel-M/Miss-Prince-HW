@@ -4,18 +4,20 @@ This is how you comment in css
 /*
 Adding a single font to the whole page
 */
+body {
+    background-color: #f5f5dc;
+}
 * {
     font-family: "Playfair Display";
 }
 /*
 Center top images and make them look nice with borders and spacing
 */
-.Images {
+.top-images {
     display: flex;
     gap: 0;
-    margin: 2em;
-    margin-top: 2em;
-    padding: 3em;
+    margin: 1em;
+    padding: 1em;
     justify-content: center;
 }
 .img-wrapper {
@@ -31,36 +33,125 @@ Center top images and make them look nice with borders and spacing
     object-fit: cover;
     display: block;
 }
-/*
-Applying text changes to all h1 tag
+/* 
+headline modifications 
 */
-h1 {
+.headline {
     color:purple;
     text-align:center;
+    margin-top: 0em;
+    font-size: 2.9em;
+    margin-bottom: 0.26em;
+
 }
-/*
-Applying text changes to all h2 tags
+/* 
+subhead modifications 
 */
-h2 {
-    text-align:center;
+.subhead {
+    text-align: center;
+    background-color: #9a4fa1;
+    margin-bottom: 2em;
+    margin-top: -1em;
+    margin-right: 43%;
+    margin-left: 43%;
+    padding: 0.27em;
 }
-/*
-Applying text changes to 'Actual-Lyric' class
+/* 
+edits to about-song 
 */
-.Actual-Lyrics{
-    text-align:center;
-    color: purple;
-    text-shadow: Purple;
+.about-song {
+    max-width: 65rem;
+    margin: 2em auto;
+    padding: 0 2rem;
+    font-size: 1.27em;
 }
-/*
-Applying text changes to all h3 tags
+.about-title {
+    text-align: left;
+    color: #9a4fa1;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+/* 
+Key info
 */
-h3 {
-    color:black;
+.key-info {
+    max-width: 30em;
+    font-size: 1.1em;
+    margin: 0em auto;
+    padding-top: 0.9em;
+    text-align: left;
+}
+/* 
+left and right images beside parchment paper border/background 
+*/
+.image-frame {
+    display: grid;
+    grid-template-columns: auto 700px auto;
+    column-gap: 2em;
+    justify-content: center;
+    align-items: start;
+/* 
+side columns 
+*/
+}
+.side-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.27em;
+    margin: 10em;
+}
+/* 
+images inisde of columns
+*/
+.side-column img {
+    width: 200px;
+    height: 275px;
+    object-fit: cover;
+    box-shadow: 0 0 12px rgba(154, 79, 161, 0.5);
+}
+/* parchment paper and lyrics */
+.Lyrics {
+    max-width: 700px;
+    margin: 0 3em;
+    padding: 7em;
+    background-image: url('Images/golden frame parchment.png');
+    background-repeat: no-repeat;
+    background-size: 115% 115%;
+    background-position: center;
+    margin-top: 12em;
+}
+.lyrics-content {
     text-align: center;
 }
+/* 
+stylizing song structure titles 
+*/
+.structure {
+    text-align: center;
+    color: black;
+    font-size: 1.5em;
+}
+/* 
+Applying text changes to 'Actual-Lyric' class 
+*/
+.Actual-Lyrics{
+    font-size: 1.1em;
+    text-align:center;
+    color: purple;
+}
+/* 
+modifying youtube embed 
+*/
 .youtube-video {
     display: flex;
     justify-content: center;
-    margin: 5em;
+    background-color: #9a4fa1;
+    margin: 3em 0;
+    margin-bottom: -1em;
+    margin-top: 3em;
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+footer {
+    margin-bottom: -2em;
 }
